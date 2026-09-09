@@ -1,0 +1,10 @@
+# This folder also contains a Cursor app install. Do not publish it.
+*
+!.gitignore
+!README.md
+!docs/
+!docs/**
+!.cursor/
+!.cursor/skills/
+!.cursor/skills/brainstorming/
+!.cursor/skills/brainstorming/**
