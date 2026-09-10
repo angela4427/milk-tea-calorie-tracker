@@ -1,0 +1,452 @@
+[
+  {
+    "brand": "喜茶",
+    "product": "多肉葡萄",
+    "calories": 140,
+    "caloriesText": "≈140",
+    "sugarCondition": "0卡糖、少少甜、去葡萄冻",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "喜茶",
+    "product": "纯绿妍茶",
+    "calories": 0,
+    "caloriesText": "≈0",
+    "sugarCondition": "不加糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "喜茶",
+    "product": "清爽芭乐葡",
+    "calories": 84,
+    "caloriesText": "≈84",
+    "sugarCondition": "不另外加糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "喜茶",
+    "product": "芝芝绿妍",
+    "calories": 150,
+    "caloriesText": "≈150",
+    "sugarCondition": "不另外加糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "喜茶",
+    "product": "多肉桃李",
+    "calories": 140,
+    "caloriesText": "≈140",
+    "sugarCondition": "不另外加糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "奈雪的茶",
+    "product": "66颗蓝莓桑葚酸奶昔",
+    "calories": 270,
+    "caloriesText": "≈270",
+    "sugarCondition": "不另外加糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "奈雪的茶",
+    "product": "老盐黄皮小黄瓶",
+    "calories": 75,
+    "caloriesText": "≈75",
+    "sugarCondition": "标准配方",
+    "cupSize": "小瓶装",
+    "note": ""
+  },
+  {
+    "brand": "奈雪的茶",
+    "product": "霸气小红杏酸奶冰",
+    "calories": 216,
+    "caloriesText": "≈216",
+    "sugarCondition": "标准冰沙",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "奈雪的茶",
+    "product": "多纤·瘦瘦小绿瓶",
+    "calories": 38,
+    "caloriesText": "≈38/100g",
+    "sugarCondition": "鲜榨无添加糖",
+    "cupSize": "标准瓶",
+    "note": "热量按每100g计，总热量需按瓶容量换算"
+  },
+  {
+    "brand": "奈雪的茶",
+    "product": "霸气橙子",
+    "calories": null,
+    "caloriesText": "全糖约高，三分糖减少约35g糖（≈140大卡差值）",
+    "sugarCondition": "三分糖 vs 全糖实测",
+    "cupSize": "标准杯",
+    "note": "暂无明确总热量"
+  },
+  {
+    "brand": "蜜雪冰城",
+    "product": "冰鲜柠檬水",
+    "calories": 45,
+    "caloriesText": "≈20（无糖）/ 45（三分糖）",
+    "sugarCondition": "三分糖、正常冰",
+    "cupSize": "标准杯",
+    "note": "无糖约20大卡"
+  },
+  {
+    "brand": "蜜雪冰城",
+    "product": "茉莉绿茶",
+    "calories": 90,
+    "caloriesText": "≈0（无糖）/ 90（三分糖）/ 180（全糖）",
+    "sugarCondition": "分糖度标注",
+    "cupSize": "标准杯",
+    "note": "无糖0，三分糖90，全糖180"
+  },
+  {
+    "brand": "蜜雪冰城",
+    "product": "茉莉奶绿",
+    "calories": 183,
+    "caloriesText": "≈183",
+    "sugarCondition": "标准配方",
+    "cupSize": "500ml",
+    "note": ""
+  },
+  {
+    "brand": "蜜雪冰城",
+    "product": "棒打鲜橙",
+    "calories": 179,
+    "caloriesText": "≈178-180",
+    "sugarCondition": "标准配方",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "蜜雪冰城",
+    "product": "龙井轻乳茶",
+    "calories": 200,
+    "caloriesText": "低于200",
+    "sugarCondition": "标准配方",
+    "cupSize": "标准杯",
+    "note": "低于200大卡"
+  },
+  {
+    "brand": "一点点",
+    "product": "茉莉绿茶",
+    "calories": 128,
+    "caloriesText": "≈128",
+    "sugarCondition": "不加糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "一点点",
+    "product": "红茶玛奇朵",
+    "calories": 170,
+    "caloriesText": "≈170",
+    "sugarCondition": "不加糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "一点点",
+    "product": "抹茶奶茶",
+    "calories": 183,
+    "caloriesText": "≈183",
+    "sugarCondition": "不加糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "一点点",
+    "product": "藏青盐奶绿",
+    "calories": 152,
+    "caloriesText": "≈152",
+    "sugarCondition": "不加糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "一点点",
+    "product": "波霸奶茶",
+    "calories": null,
+    "caloriesText": "全糖约高，三分糖少35g糖（≈140大卡差值）",
+    "sugarCondition": "三分糖 vs 全糖实测",
+    "cupSize": "中杯",
+    "note": "暂无明确总热量"
+  },
+  {
+    "brand": "CoCo都可",
+    "product": "蜜桃映乌龙",
+    "calories": 329,
+    "caloriesText": "≈329",
+    "sugarCondition": "全糖、大杯",
+    "cupSize": "大杯",
+    "note": ""
+  },
+  {
+    "brand": "CoCo都可",
+    "product": "百香绿茶",
+    "calories": 355,
+    "caloriesText": "≈355",
+    "sugarCondition": "全糖、大杯",
+    "cupSize": "大杯",
+    "note": ""
+  },
+  {
+    "brand": "CoCo都可",
+    "product": "蜜桃泡泡",
+    "calories": 273,
+    "caloriesText": "≈273",
+    "sugarCondition": "全糖、大杯",
+    "cupSize": "大杯",
+    "note": ""
+  },
+  {
+    "brand": "CoCo都可",
+    "product": "莓好双果茶",
+    "calories": 299,
+    "caloriesText": "≈299",
+    "sugarCondition": "全糖、大杯",
+    "cupSize": "大杯",
+    "note": ""
+  },
+  {
+    "brand": "CoCo都可",
+    "product": "珍珠奶茶",
+    "calories": 501,
+    "caloriesText": "≈501（中杯）/ 722（大杯）",
+    "sugarCondition": "全糖",
+    "cupSize": "中杯/大杯",
+    "note": "大杯约722大卡"
+  },
+  {
+    "brand": "茶百道",
+    "product": "生椰西瓜",
+    "calories": 105,
+    "caloriesText": "≈105",
+    "sugarCondition": "无糖、正常冰",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "茶百道",
+    "product": "鲜紫苏多肉葡萄",
+    "calories": 148,
+    "caloriesText": "≈148",
+    "sugarCondition": "无糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "茶百道",
+    "product": "佛手柠檬水",
+    "calories": 32,
+    "caloriesText": "≈32",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "茶百道",
+    "product": "小麦草冰奶",
+    "calories": 133,
+    "caloriesText": "≈133",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "茶百道",
+    "product": "竹香芒打椰",
+    "calories": 187.5,
+    "caloriesText": "≈187.5",
+    "sugarCondition": "无糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "霸王茶姬",
+    "product": "伯牙绝弦",
+    "calories": 125,
+    "caloriesText": "≈120-130",
+    "sugarCondition": "无糖、少冰",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "霸王茶姬",
+    "product": "夏梦玫珑",
+    "calories": 97,
+    "caloriesText": "≈97",
+    "sugarCondition": "不另外加糖",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "霸王茶姬",
+    "product": "橙柚康普",
+    "calories": 80,
+    "caloriesText": "≈80",
+    "sugarCondition": "不另外加糖、标准冰",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "霸王茶姬",
+    "product": "菠萝马黛",
+    "calories": 103,
+    "caloriesText": "≈103",
+    "sugarCondition": "微糖、标准冰",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "霸王茶姬",
+    "product": "一抹山月",
+    "calories": 184,
+    "caloriesText": "≈168-200",
+    "sugarCondition": "少糖",
+    "cupSize": "350ml",
+    "note": ""
+  },
+  {
+    "brand": "古茗",
+    "product": "话梅柠檬水",
+    "calories": 62,
+    "caloriesText": "≈62",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "古茗",
+    "product": "超A桃桃撞奶",
+    "calories": 190,
+    "caloriesText": "≈185-194",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "古茗",
+    "product": "苹果金凤梨",
+    "calories": 108,
+    "caloriesText": "≈108",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "古茗",
+    "product": "百香双重奏",
+    "calories": 130,
+    "caloriesText": "≈130",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "古茗",
+    "product": "云岭茉莉白",
+    "calories": 175,
+    "caloriesText": "≈175",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯",
+    "note": ""
+  },
+  {
+    "brand": "沪上阿姨",
+    "product": "粉荔海盐冰奶",
+    "calories": 125,
+    "caloriesText": "≈125（中杯）/ 140（大杯）",
+    "sugarCondition": "标准配方",
+    "cupSize": "中杯/大杯",
+    "note": "大杯约140大卡"
+  },
+  {
+    "brand": "沪上阿姨",
+    "product": "苹果拿铁",
+    "calories": 158,
+    "caloriesText": "≈158",
+    "sugarCondition": "不另外加糖、正常冰",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "沪上阿姨",
+    "product": "熔岩榛巧摩卡",
+    "calories": 188,
+    "caloriesText": "≈188",
+    "sugarCondition": "不另外加糖、正常冰",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "沪上阿姨",
+    "product": "生椰拿铁",
+    "calories": 180,
+    "caloriesText": "≈180",
+    "sugarCondition": "不另外加糖、正常冰",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "沪上阿姨",
+    "product": "雪吻玫瑰拿铁",
+    "calories": 183,
+    "caloriesText": "≈183",
+    "sugarCondition": "不另外加糖、正常冰",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "书亦烧仙草",
+    "product": "刺梨柠檬柚",
+    "calories": 181,
+    "caloriesText": "≈181",
+    "sugarCondition": "标准配方",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "书亦烧仙草",
+    "product": "小吊梨轻乳茶",
+    "calories": 190,
+    "caloriesText": "≈190",
+    "sugarCondition": "少糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "书亦烧仙草",
+    "product": "伯爵草莓肉桂茶",
+    "calories": 71,
+    "caloriesText": "≈71",
+    "sugarCondition": "微糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "书亦烧仙草",
+    "product": "芋泥全家福",
+    "calories": 384,
+    "caloriesText": "≈384",
+    "sugarCondition": "微糖",
+    "cupSize": "标准杯",
+    "note": ""
+  },
+  {
+    "brand": "书亦烧仙草",
+    "product": "多肉葡萄/西瓜冰茶",
+    "calories": 280,
+    "caloriesText": "≈280",
+    "sugarCondition": "微糖",
+    "cupSize": "标准杯",
+    "note": ""
+  }
+]

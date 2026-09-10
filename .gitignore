@@ -8,3 +8,10 @@
 !.cursor/skills/
 !.cursor/skills/brainstorming/
 !.cursor/skills/brainstorming/**
+!src/
+!src/**
+!index.html
+!package.json
+!package-lock.json
+!vite.config.ts
+!tsconfig.json

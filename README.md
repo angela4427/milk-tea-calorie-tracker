@@ -1,8 +1,25 @@
 # 奶茶热量记录小工具
 
-减脂场景下的 Web 点单工作台：按品牌 / 规格给出热量区间，登录后记账、看今日额度与本周趋势。
+移动端优先的热量计算器：从 `src/data/drinks.json` 选品牌 / 产品 / 杯型 / 甜度，可加估算小料，看总热量、构成和轻负担建议。
 
-当前仓库先放 **PRD**（实现尚未开始）。
+## 本地运行
 
-- 产品规格：`docs/superpowers/specs/2026-09-09-milk-tea-calorie-tracker-design.md`
-- 第一版品牌（10 个）：喜茶、奈雪的茶、蜜雪冰城、霸王茶姬、茶百道、古茗、一点点、CoCo都可、书亦烧仙草、沪上阿姨
+需要 Node.js（本机若在 `D:\\nodejs`，先把该目录加入 PATH）。
+
+```bash
+npm install
+npm run dev
+```
+
+浏览器打开终端里提示的地址（默认 http://localhost:5173/）。
+
+## 数据
+
+- 目录：`src/data/drinks.json`
+- `calories` 为 `null` 时页面显示「暂无精确数据，仅供参考」
+- JSON 没有加料字段，珍珠等小料为估算，会在构成里标明
+
+## 文档
+
+- PRD：`docs/superpowers/specs/2026-09-09-milk-tea-calorie-tracker-design.md`
+- 扣子人设：`docs/coze/milk-tea-calorie-bot-persona.md`
