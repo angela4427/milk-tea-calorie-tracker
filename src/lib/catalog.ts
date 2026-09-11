@@ -1,12 +1,16 @@
 import drinksJson from "../data/drinks.json";
 
+export type SugarOption = {
+  sugar: string;
+  calories: number | null;
+  caloriesText: string;
+};
+
 export type Drink = {
   brand: string;
   product: string;
-  calories: number | null;
-  caloriesText: string;
-  sugarCondition: string;
   cupSize: string;
+  sugarOptions: SugarOption[];
   note: string;
 };
 
@@ -54,33 +58,30 @@ function looksLikeCup(label: string): boolean {
   return /杯|瓶|ml|ML|装/.test(label);
 }
 
-function looksLikeSweet(label: string): boolean {
-  return /糖|甜|无糖/.test(label);
-}
-
 export function cupOptions(item: Drink): string[] {
   const options = new Set<string>();
   for (const part of item.cupSize.split("/")) {
     const trimmed = part.trim();
     if (trimmed) options.add(trimmed);
   }
-  for (const labeled of parseLabeledCalories(item.caloriesText)) {
-    if (looksLikeCup(labeled.label)) options.add(labeled.label);
+  for (const sugar of item.sugarOptions) {
+    for (const labeled of parseLabeledCalories(sugar.caloriesText)) {
+      if (looksLikeCup(labeled.label)) options.add(labeled.label);
+    }
   }
   return [...options];
 }
 
 export function sweetOptions(item: Drink): string[] {
-  const options = new Set<string>();
-  if (item.sugarCondition.trim()) options.add(item.sugarCondition);
-  for (const labeled of parseLabeledCalories(item.caloriesText)) {
-    if (looksLikeSweet(labeled.label)) options.add(labeled.label);
-  }
-  return [...options];
+  return item.sugarOptions.map((option) => option.sugar);
 }
 
 function labelMatches(option: string, label: string): boolean {
   return option === label || option.includes(label) || label.includes(option);
+}
+
+export function selectedSugar(item: Drink, sugar: string): SugarOption | undefined {
+  return item.sugarOptions.find((option) => option.sugar === sugar) ?? item.sugarOptions[0];
 }
 
 export function drinkCalories(
@@ -88,19 +89,23 @@ export function drinkCalories(
   cupSize: string,
   sugarCondition: string,
 ): number | null {
-  const labeled = parseLabeledCalories(item.caloriesText);
+  const option = selectedSugar(item, sugarCondition);
+  if (!option) return null;
 
-  const sweetHit = labeled.find(
-    (entry) => looksLikeSweet(entry.label) && labelMatches(sugarCondition, entry.label),
-  );
-  if (sweetHit) return sweetHit.value;
-
+  const labeled = parseLabeledCalories(option.caloriesText);
   const cupHit = labeled.find(
     (entry) => looksLikeCup(entry.label) && labelMatches(cupSize, entry.label),
   );
   if (cupHit) return cupHit.value;
 
-  return item.calories;
+  return option.calories;
+}
+
+export function minCalories(item: Drink): number | null {
+  const nums = item.sugarOptions
+    .map((option) => option.calories)
+    .filter((n): n is number => n !== null);
+  return nums.length > 0 ? Math.min(...nums) : null;
 }
 
 export function toppingTotal(ids: string[]): number {
@@ -109,10 +114,12 @@ export function toppingTotal(ids: string[]): number {
 
 export function lighterAlternatives(item: Drink, current: number | null): Drink[] {
   const sameBrand = productsForBrand(item.brand).filter((d) => d.product !== item.product);
-  const numbered = sameBrand.filter((d): d is Drink & { calories: number } => d.calories !== null);
-  numbered.sort((a, b) => a.calories - b.calories);
-  if (current === null) return numbered.slice(0, 2);
-  return numbered.filter((d) => d.calories < current).slice(0, 2);
+  const ranked = sameBrand
+    .map((d) => ({ drink: d, kcal: minCalories(d) }))
+    .filter((row): row is { drink: Drink; kcal: number } => row.kcal !== null)
+    .sort((a, b) => a.kcal - b.kcal);
+  if (current === null) return ranked.slice(0, 2).map((row) => row.drink);
+  return ranked.filter((row) => row.kcal < current).slice(0, 2).map((row) => row.drink);
 }
 
 export type Advice = {
@@ -135,7 +142,9 @@ export function burdenAdvice(
   const alts = lighterAlternatives(item, total);
   const altText =
     alts.length > 0
-      ? `同品牌更轻的选择：${alts.map((d) => `${d.product}（约 ${d.calories} kcal）`).join("、")}。`
+      ? `同品牌更轻的选择：${alts
+          .map((d) => `${d.product}（约 ${minCalories(d)} kcal）`)
+          .join("、")}。`
       : "";
 
   if (total <= 120) {

@@ -1,17 +1,20 @@
 :root {
   color-scheme: light;
-  --bg: #f4efe6;
-  --paper: #fffaf3;
-  --ink: #1d2a22;
-  --muted: #66756c;
-  --line: #e4d9c8;
-  --tea: #2f6b4f;
-  --tea-soft: #e7f3ec;
+  --page: #eef1f8;
+  --shell: #f6f3ea;
+  --paper: #ffffff;
+  --ink: #1c3228;
+  --muted: #8a847a;
+  --line: #ece6d8;
+  --tea: #2a6b4e;
+  --tea-deep: #215c42;
+  --tea-soft: #d9eee3;
+  --chip-kcal: #c17a3a;
+  --track: #efe8dc;
   --warn: #9a4a1f;
   --warn-soft: #f8ebe3;
-  --ok: #2c6e51;
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(48, 38, 22, 0.06);
+  --radius: 28px;
+  --shadow: 0 8px 28px rgba(60, 48, 30, 0.06);
   font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
 }
 
@@ -23,18 +26,18 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background: var(--bg);
+  background: var(--page);
   color: var(--ink);
 }
 
 body {
   display: flex;
   justify-content: center;
-  padding: env(safe-area-inset-top) 16px calc(20px + env(safe-area-inset-bottom));
+  padding: 16px 12px calc(20px + env(safe-area-inset-bottom));
 }
 
 #app {
-  width: min(430px, 100%);
+  width: min(400px, 100%);
 }
 
 button,
