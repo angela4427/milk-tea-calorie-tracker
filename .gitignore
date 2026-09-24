@@ -5,3 +5,6 @@ dist
 .vite
 .idea
 .vscode
+
+# 浏览器「另存为」产生的资源目录，只忽略仓库根目录下的
+/*_files/

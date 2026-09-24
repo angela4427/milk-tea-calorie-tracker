@@ -75,6 +75,16 @@ npm run preview
 
 https://milk-tea-calorie-tracker.vercel.app/
 
+## V1 原型
+
+墨刀界面稿存档在 [`docs/prototype/`](./docs/prototype/)。
+
+推荐直接看截图：
+
+![V1 墨刀原型](./docs/prototype/modao-preview.png)
+
+更完整的说明见 [`docs/prototype/README.md`](./docs/prototype/README.md)。
+
 ## 迭代计划
 
 V2 计划接入 AI API（扣子），支持自然语言查询，不用逐项下拉选择。比如直接问「一杯一点点珍珠奶茶三分糖多少卡」。
